@@ -1,0 +1,15 @@
+FI ap_inic, ap_arq, ap_000, ap_100
+FI ap_111, ap_11A, ap_11C, ap_11D, ap_112, ap_113, ap_114, ap_120
+FI ap_130, ap_131, ap_132, ap_133, ap_134, ap_135, ap_136
+FI ap_150, ap_151, ap_152
+FI ap_200, ap_211, ap_212, ap_213, ap_214, ap_215, ap_221
+FI ap_300, ap_311, ap_320, ap_331, ap_332, ap_333, ap_334
+FI ap_341, ap_342, ap_343, ap_344, ap_345
+FI ap_346, ap_347, ap_348, ap_371, ap_380, ap_381
+FI ap_381GT, ap_381GD, ap_381D
+FI ap_400, ap_410, ap_420, ap_421, ap_422, ap_430
+FI ap_proc, ap_cor, ap_impr, ap_func, ap_calc, ap_erro
+FI club2100, club2200, club3100, club3101, club3200, club3300, club3310
+FI club3400, club3500, club3111, club31DD
+LI NET, BAR52
+OU SGC

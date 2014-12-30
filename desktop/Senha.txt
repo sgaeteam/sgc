@@ -1,0 +1,10 @@
+User: NET4
+Pass: master
+
+configuração para executar o programa
+
+Mudar os arquivos 
+config.nt
+ - files=220
+autoexec.nt
+ - SET CLIPPER = F220;E2000

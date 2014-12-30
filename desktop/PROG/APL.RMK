@@ -1,0 +1,98 @@
+// Sistema de Gerenciamento de Clube
+
+.PRG.OBJ:
+   CLIPPER $** /m /B
+
+ap_inic.obj : ap_inic.prg
+ap_arq.obj  : ap_arq.prg
+ap_000.obj  : ap_000.prg
+ap_100.obj  : ap_100.prg
+ap_11A.obj  : ap_11A.prg
+ap_11C.obj  : ap_11C.prg
+ap_11D.obj  : ap_11D.prg
+ap_113.obj  : ap_113.prg
+ap_114.obj  : ap_114.prg
+ap_130.obj  : ap_130.prg
+ap_131.obj  : ap_131.prg
+ap_132.obj  : ap_132.prg
+ap_133.obj  : ap_133.prg
+ap_134.obj  : ap_134.prg
+ap_135.obj  : ap_135.prg
+ap_136.obj  : ap_136.prg
+ap_150.obj  : ap_150.prg
+ap_151.obj  : ap_151.prg
+ap_152.obj  : ap_152.prg
+ap_200.obj  : ap_200.prg
+ap_213.obj  : ap_213.prg
+ap_214.obj  : ap_214.prg
+ap_300.obj  : ap_300.prg
+ap_320.obj  : ap_320.prg
+ap_333.obj  : ap_333.prg
+ap_334.obj  : ap_334.prg
+ap_341.obj  : ap_341.prg
+ap_342.obj  : ap_342.prg
+ap_343.obj  : ap_343.prg
+ap_344.obj  : ap_344.prg
+ap_345.obj  : ap_345.prg
+ap_346.obj  : ap_346.prg
+ap_347.obj  : ap_347.prg
+ap_348.obj  : ap_348.prg
+ap_371.obj  : ap_371.prg
+ap_380.obj  : ap_380.prg
+ap_381.obj  : ap_381.prg
+ap_381GT.obj : ap_381GT.prg
+ap_381GD.obj : ap_381GD.prg
+ap_381D.obj  : ap_381D.prg
+ap_400.obj  : ap_400.prg
+ap_410.obj  : ap_410.prg
+ap_420.obj  : ap_420.prg
+ap_421.obj  : ap_421.prg
+ap_422.obj  : ap_422.prg
+ap_430.obj  : ap_430.prg
+ap_proc.obj : ap_proc.prg
+ap_cor.obj  : ap_cor.prg
+ap_impr.obj : ap_impr.prg
+ap_func.obj : ap_func.prg
+ap_calc.obj : ap_calc.prg
+club2100.obj: club2100.prg
+club2200.obj: club2200.prg
+club3100.obj: club3100.prg
+club3101.obj: club3101.prg
+club3200.obj: club3200.prg
+club3300.obj: club3300.prg
+club3310.obj: club3310.prg
+club3400.obj: club3400.prg
+club3500.obj: club3500.prg
+club3111.obj: club3111.prg
+club31DD.obj: club31DD.prg
+
+.PRG.OBJ:
+   CLIPPER $** /a /m /n /b
+
+ap_erro.obj : ap_erro.prg
+ap_311.obj  : ap_311.prg
+ap_111.obj  : ap_111.prg
+ap_112.obj  : ap_112.prg
+ap_120.obj  : ap_120.prg
+ap_211.obj  : ap_211.prg
+ap_212.obj  : ap_212.prg
+ap_215.obj  : ap_215.prg
+ap_221.obj  : ap_221.prg
+ap_331.obj  : ap_331.prg
+ap_332.obj  : ap_332.prg
+
+obj0 = ap_000.obj ap_inic.obj ap_arq.obj ap_11A.obj ap_11D.obj
+obj1 = ap_100.obj ap_111.obj ap_112.obj ap_113.obj ap_114.obj ap_120.obj
+obj1a= ap_130.obj ap_131.obj ap_132.obj ap_133.obj ap_134.obj ap_135.obj ap_136.obj
+obj1b= ap_150.obj ap_151.obj ap_152.obj ap_11c.obj ap_380.obj
+obj2 = ap_200.obj ap_211.obj ap_212.obj ap_213.obj ap_214.obj ap_215.obj ap_221.obj
+obj3 = ap_300.obj ap_311.obj ap_320.obj ap_331.obj ap_332.obj ap_333.obj ap_334.obj ap_341.obj ap_342.obj
+obj3a= ap_343.obj ap_344.obj ap_345.obj ap_346.obj ap_347.obj ap_348.obj ap_371.obj
+obj4 = ap_400.obj ap_410.obj ap_420.obj ap_421.obj ap_422.obj ap_430.obj
+obj5 = ap_func.obj ap_calc.obj ap_cor.obj ap_impr.obj ap_proc.obj club3111.obj club31DD.obj
+obj6 = ap_erro.obj club2100.obj club2200.obj club3100.obj club3101.obj club3200.obj club3300.obj club3400.obj club3500.obj
+obj7 = club3310.obj ap_381GT.obj ap_381GD.obj ap_381D.obj ap_381.obj
+ 
+APL.EXE: $(obj0) $(obj1) $(obj1a) $(obj1b) $(obj2) $(obj3) $(obj3a) $(obj4) $(obj5) $(obj6) $(obj7)
+    RTLINK @APL.LNK 
+    */pll:base52
