@@ -1,0 +1,15 @@
+
+</div>
+     <!-- /. WRAPPER  -->
+        <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+     <script type="text/javascript" src="<c:url value ="/js/jquery-1.10.2.js"/>"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script type="text/javascript" src="<c:url value ="/js/bootstrap.min.js"/>"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script type="text/javascript" src="<c:url value ="/js/jquery.metisMenu.js"/>"></script> 
+    <!-- CUSTOM SCRIPTS -->
+    <script type="text/javascript" src="<c:url value ="/js/custom.js"/>"></script> 
+      
+</body>
+</html>
