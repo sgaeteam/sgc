@@ -5,6 +5,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="img"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -56,70 +57,149 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<c:url value="/index"/>">SGC</a> 
+                <a class="navbar-brand" href="<c:url value="/index"/>"><fmt:message key="sistema.sigla"/></a> 
             </div>
             
             <ul class="nav navbar-nav">
             	<li class="dropdown">
-              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;">Administração<b class="caret"></b></a>
+              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;"><fmt:message key="label.cadastro"/><b class="caret"></b></a>
             		<ul class="dropdown-menu">
-                    	<li><a href="#">Administração 1</a></li>
+                    	<li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.cad.socios"/></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><fmt:message key="label.cad.socios.titular"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.cad.socios.dependente"/></a></li>
+                    		</ul>
+                    	</li>
                     	<li class="divider"></li>
-                    	<li><a href="#">Administração 2</a></li>
-                    	<li class="divider"></li>
-                    	<li><a href="#">Administração 3</a></li>
-            		</ul>
-            	</li>
-            	<li class="dropdown">
-              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;">Cadastros<b class="caret"></b></a>
-            		<ul class="dropdown-menu">
-                    	<li><a href="#">Cadastros 1</a></li>
-                    	<li class="divider"></li>
-                    	<li><a href="#">Cadastros 2</a></li>
-                    	<li class="divider"></li>
-                    	<li><a href="#">Cadastros 3</a></li>
-            		</ul>
-            	</li>
-            	<li class="dropdown">
-              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;">Movimentações<b class="caret"></b></a>
-            		<ul class="dropdown-menu">
-                    	<li><a href="#">Movimentação 1</a></li>
-                    	<li class="divider"></li>
-                    	<li><a href="#">Movimentação 2</a></li>
-                    	<li class="divider"></li>
-                    	<li><a href="#">Movimentação 3</a></li>
+                    	<li><a href="#"><fmt:message key="label.cad.usuarios"/></a></li>
                     	<li class="divider"></li>
                     	<li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Movimentação 4</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.cad.tabelas"/></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Movimentação 4.1</a></li>
+                                <li><a href="#"><fmt:message key="label.cad.tabelas.atividades"/></a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Movimentação 4.2</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Movimentação 4.2.1</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Movimentação 4.2.1.1</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Movimentação 4.2.1.2</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        
+                                <li><a href="#"><fmt:message key="label.cad.tabelas.cobrancas"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.cad.tabelas.funcoes"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.cad.tabelas.unidades"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.cad.tabelas.areasdecompetencia"/></a></li>
+                    		</ul>
+                    	</li>	
             		</ul>
             	</li>
             	<li class="dropdown">
-              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;">Relatórios<b class="caret"></b></a>
+              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;"><fmt:message key="label.administracao"/><b class="caret"></b></a>
             		<ul class="dropdown-menu">
-                    	<li><a href="#">Relatórios 1</a></li>
+                    	<li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.adm.pagamentos"/></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><fmt:message key="label.adm.pagamentos.socios"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.adm.pagamentos.usuarios"/></a></li>
+                    		</ul>
+                    	</li>
                     	<li class="divider"></li>
-                    	<li><a href="#">Relatórios 2</a></li>
+                    	<li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.adm.alugueis"/></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><fmt:message key="label.adm.alugueis.salaodefestas"/></a></li>
+                    		</ul>
+                    	</li>
                     	<li class="divider"></li>
-                    	<li><a href="#">Relatórios 3</a></li>
+                    	<li><a href="#"><fmt:message key="label.adm.convites"/></a></li>
+            		</ul>
+            	</li>
+            	<li class="dropdown">
+              		<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;font-size: 16px;"><fmt:message key="label.relatorios"/><b class="caret"></b></a>
+            		<ul class="dropdown-menu">
+                    	<li><a href="#"><fmt:message key="label.rel.estratificado"/></a></li>
+                    	<li class="divider"></li>
+                    	<li><a href="#"><fmt:message key="label.rel.maiores21"/></a></li>
+                    	<li class="divider"></li>
+                    	<li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.financeiro"/></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><fmt:message key="label.rel.financeiro.socios"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.rel.financeiro.usuarios"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.rel.financeiro.pagamentos"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.rel.financeiro.historico"/></a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.maladireta"/></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><fmt:message key="label.rel.maladireta.categoria"/></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><fmt:message key="label.rel.maladireta.unidade"/></a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.maladireta.aniversariante"/></a>
+                            		<ul class="dropdown-menu">
+                                		<li><a href="#"><fmt:message key="label.rel.maladireta.aniversariante.etiqueta"/></a></li>
+                                		<li class="divider"></li>
+                                		<li><a href="#"><fmt:message key="label.rel.maladireta.aniversariante.carta"/></a></li>
+                                	</ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.maladireta.funcao"/></a>
+                            		<ul class="dropdown-menu">
+                                		<li><a href="#"><fmt:message key="label.rel.maladireta.funcao.etiqueta"/></a></li>
+                                		<li class="divider"></li>
+                                		<li><a href="#"><fmt:message key="label.rel.maladireta.funcao.carta"/></a></li>
+                                	</ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.maladireta.nome"/></a>
+                            		<ul class="dropdown-menu">
+                                		<li><a href="#"><fmt:message key="label.rel.maladireta.nome.socios"/></a></li>
+                                		<li class="divider"></li>
+                                		<li><a href="#"><fmt:message key="label.rel.maladireta.nome.usuarios"/></a></li>
+                                	</ul>
+                                </li>
+                        	</ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.socios"/></a>
+                               <ul class="dropdown-menu">
+                                <li><a href="#"><fmt:message key="label.rel.socios.socio"/></a></li>
+                                	<li class="divider"></li>
+                                	<li><a href="#"><fmt:message key="label.rel.socios.portaria"/></a></li>
+                                	<li class="divider"></li>
+                                	<li><a href="#"><fmt:message key="label.rel.socios.desativados"/></a></li>
+                                	<li class="divider"></li>
+                                	<li><a href="#"><fmt:message key="label.rel.socios.assinatura"/></a></li>
+                               </ul>
+                        </li>
+                        <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                            		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="label.rel.convidados"/></a>
+                            		<ul class="dropdown-menu">
+                                		<li><a href="#"><fmt:message key="label.rel.convidados.nome"/></a></li>
+                                		<li class="divider"></li>
+                                		<li><a href="#"><fmt:message key="label.rel.convidados.periodo"/></a></li>
+                                		<li class="divider"></li>
+                                		<li><a href="#"><fmt:message key="label.rel.convidados.socio"/></a></li>
+                                	</ul>
+                                </li>
+                        <li class="divider"></li>        
+                        <li><a href="#"><fmt:message key="label.rel.aluguelsalao"/></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><fmt:message key="label.rel.convites"/></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><fmt:message key="label.rel.usuarios"/></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><fmt:message key="label.rel.carteiras"/></a></li>
             		</ul>
             	</li>
         	</ul>
@@ -134,34 +214,34 @@
                     	<img src="img/find_user.png" class="user-image img-responsive"/>
 					</li>
                     <li>
-                        <a href="<c:url value="/index"/>"><i class="fa fa fa-desktop fa-3x"></i> Principal</a>
+                        <a href="<c:url value="/index"/>"><i class="fa fa fa-desktop fa-3x"></i><fmt:message key="menu.lateral.principal"/></a>
                     </li>
                       <li>
-                        <a href="#"><i class="fa fa-users fa-3x"></i> Administração</a>
+                        <a href="#"><i class="fa fa-users fa-3x"></i><fmt:message key="menu.lateral.administracao"/></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-cogs fa-3x"></i> Utilitários </a>
+                        <a href="#"><i class="fa fa-cogs fa-3x"></i><fmt:message key="menu.lateral.utilitarios"/></a>
                     </li>							                   
                     <li>
-                        <a href="#"><i class="fa fa-comments-o fa-3x"></i> Ajuda<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-comments-o fa-3x"></i><fmt:message key="menu.lateral.ajuda"/><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#">Ajuda 1</a>
+                                <a href="#"><fmt:message key="menu.lateral.ajuda.opcao.1"/></a>
                             </li>
                             <li>
-                                <a href="#">Ajuda 2</a>
+                                <a href="#"><fmt:message key="menu.lateral.ajuda.opcao.2"/></a>
                             </li>
                             <li>
-                                <a href="#">Ajuda 3<span class="fa arrow"></span></a>
+                                <a href="#"><fmt:message key="menu.lateral.ajuda.opcao.3"/><span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="#">Ajuda 3.1</a>
+                                        <a href="#"><fmt:message key="menu.lateral.ajuda.opcao.3.1"/></a>
                                     </li>
                                     <li>
-                                        <a href="#">Ajuda 3.2</a>
+                                        <a href="#"><fmt:message key="menu.lateral.ajuda.opcao.3.2"/></a>
                                     </li>
                                     <li>
-                                        <a href="#">Ajuda 3.3</a>
+                                        <a href="#"><fmt:message key="menu.lateral.ajuda.opcao.3.3"/></a>
                                     </li>
 
                                 </ul>
@@ -170,7 +250,7 @@
                         </ul>
                       </li>  
                   <li  >
-                        <a class="active-menu"  href="<c:url value="/logout"/>"><i class="fa fa-power-off fa-3x"></i> Sair</a>
+                        <a class="active-menu"  href="<c:url value="/logout"/>"><i class="fa fa-power-off fa-3x"></i><fmt:message key="menu.lateral.sair"/></a>
                     </li>	
                 </ul>
             </div>    
